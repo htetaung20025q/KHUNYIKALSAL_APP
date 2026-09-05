@@ -79,19 +79,16 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Copyright & Bottom Links */}
-        <div className="mt-12 pt-8 border-t border-white/20 flex flex-col lg:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-red-200 text-center lg:text-left">
-            {BRAND_CONFIG.copyright}
-          </p>
-
-          {/* Developer Credit */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/40 border border-amber-400/50 shadow-md backdrop-blur-xs transition-all duration-200 hover:scale-105 hover:bg-black/60 hover:border-amber-300">
-            <div className="w-5 h-5 rounded-full bg-amber-400/25 border border-amber-400/60 flex items-center justify-center text-amber-300">
-              <Code2 className="w-3.5 h-3.5 stroke-[2.5]" />
-            </div>
-            <span className="text-xs font-bold text-amber-300 tracking-wide">
-              Developer by <span className="text-white font-extrabold underline decoration-amber-400 decoration-2 underline-offset-2">Htet Aung</span>
-            </span>
+        <div className="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-xs text-center sm:text-left">
+            <p className="text-red-200">
+              {BRAND_CONFIG.copyright}
+            </p>
+            <span className="hidden sm:inline text-white/30">•</span>
+            <p className="inline-flex items-center gap-1.5 font-bold text-yellow-300">
+              <Code2 className="w-3.5 h-3.5 shrink-0" />
+              <span>Developer by Htet Aung</span>
+            </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-red-100">
